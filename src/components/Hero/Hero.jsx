@@ -56,7 +56,7 @@ const HeroSlider = () => {
   };
 
   return (
-    <div className="relative w-full h-[600px] overflow-hidden">
+    <div className="relative mt-2 w-full h-[600px] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={slide.id}

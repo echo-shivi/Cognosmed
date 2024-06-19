@@ -39,7 +39,7 @@ const Typewriter = () => {
   }, [texts, textIndex, currentIndex, isTyping]);
 
   return (
-    <div className=" mt-0 flex items-center justify-center h-[1200] bg-white mb-0">
+    <div className=" mt-2 flex items-center justify-center h-[1200] bg-white mb-0">
       <div className="text-blue-500 text-4xl font-bold">
         {currentText}
         <span className={classNames({ "opacity-1": !isTyping })}>|</span>

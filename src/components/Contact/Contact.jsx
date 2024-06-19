@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { SiMinutemailer } from "react-icons/si";
+import "./Contact.css"; // Import CSS for animation styles
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -16,18 +18,29 @@ const ContactForm = () => {
     e.preventDefault();
     // Handle form submission logic (e.g., send data to a server or API)
     console.log("Form submitted:", formData);
+
+    // Optionally, reset the form fields after submission
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
   };
 
   return (
     <div className="container mx-auto p-4 bg-white rounded-md text-black">
-      <h2 className="text-2xl font-bold mb-4 text-center">Contact Us</h2>
+      <h2 className="text-3xl font-bold mb-6 text-center flex items-center justify-center">
+        <span>Contact Us</span>
+        <SiMinutemailer className="ml-2 animated-icon" />
+      </h2>
       <form
         onSubmit={handleSubmit}
         className="max-w-md mx-auto bg-white p-8 shadow-lg rounded-lg"
       >
         <div className="mb-4">
           <label
-            className="block text-gray-700 text-sm font-bold mb-2"
+            className="block text-sm font-medium text-gray-700"
             htmlFor="name"
           >
             Name
@@ -38,13 +51,14 @@ const ContactForm = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-white bg-amber-600 leading-tight focus:outline-none focus:shadow-outline"
+            placeholder="Enter your name"
             required
+            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 sm:text-sm"
           />
         </div>
         <div className="mb-4">
           <label
-            className="block text-gray-700 text-sm font-bold mb-2"
+            className="block text-sm font-medium text-gray-700"
             htmlFor="email"
           >
             Email
@@ -55,16 +69,17 @@ const ContactForm = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-white bg-amber-600 leading-tight focus:outline-none focus:shadow-outline"
+            placeholder="Enter your email"
             required
+            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 sm:text-sm"
           />
         </div>
         <div className="mb-4">
           <label
-            className="block text-gray-700 text-sm font-bold mb-2"
+            className="block text-sm font-medium text-gray-700"
             htmlFor="subject"
           >
-            Subject
+            Phone No.
           </label>
           <input
             type="text"
@@ -72,13 +87,14 @@ const ContactForm = () => {
             name="subject"
             value={formData.subject}
             onChange={handleChange}
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-white bg-amber-600 leading-tight focus:outline-none focus:shadow-outline"
+            placeholder="Enter your phone number"
             required
+            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 sm:text-sm"
           />
         </div>
         <div className="mb-4">
           <label
-            className="block text-gray-700 text-sm font-bold mb-2"
+            className="block text-sm font-medium text-gray-700"
             htmlFor="message"
           >
             Message
@@ -88,15 +104,16 @@ const ContactForm = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-white bg-amber-600 leading-tight focus:outline-none focus:shadow-outline"
+            placeholder="Enter your message"
             rows="4"
             required
+            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 sm:text-sm"
           ></textarea>
         </div>
-        <div className="flex items-center justify-between">
+        <div className="text-center">
           <button
             type="submit"
-            className="bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="inline-block bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-6 rounded focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-opacity-50"
           >
             Send Message
           </button>

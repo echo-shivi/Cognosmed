@@ -1,0 +1,5 @@
+/* styles.css or App.css */
+.border-gradient-olive-brown {
+  border-image: linear-gradient(to right, #808000, #654321);
+  border-image-slice: 1;
+}

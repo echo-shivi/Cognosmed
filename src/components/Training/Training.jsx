@@ -6,27 +6,33 @@ const TrainingSection = () => {
   const trainings = [
     {
       duration: "7 days",
-      imageSrc: "https://via.placeholder.com/800x600?text=Training+1",
+      imageSrc:
+        "https://tse3.mm.bing.net/th?id=OIP.hVusL33PlKV2iItt4VzaUAAAAA&pid=Api&P=0&h=220",
     },
     {
       duration: "15 days",
-      imageSrc: "https://via.placeholder.com/800x600?text=Training+2",
+      imageSrc:
+        "https://tse2.mm.bing.net/th?id=OIP.xMD_is13pZ_t--r4PEoEHAHaE8&pid=Api&P=0&h=220",
     },
     {
       duration: "30 days",
-      imageSrc: "https://via.placeholder.com/800x600?text=Training+3",
+      imageSrc:
+        "https://tse2.mm.bing.net/th?id=OIP.R5NrIe4b3e9MMLaAHCRwCQHaE7&pid=Api&P=0&h=220",
     },
     {
       duration: "3 months",
-      imageSrc: "https://via.placeholder.com/800x600?text=Training+4",
+      imageSrc:
+        "https://tse1.mm.bing.net/th?id=OIP.-d0AFiBIKflCjawCAw5vPwHaE7&pid=Api&P=0&h=220",
     },
     {
       duration: "6 months",
-      imageSrc: "https://via.placeholder.com/800x600?text=Training+5",
+      imageSrc:
+        "https://tse3.mm.bing.net/th?id=OIP._nqtu5zxztDoP_nG4iPlRgHaE7&pid=Api&P=0&h=220",
     },
     {
       duration: "6 months PPO",
-      imageSrc: "https://via.placeholder.com/800x600?text=Training+6",
+      imageSrc:
+        "https://img.freepik.com/free-photo/chemist-ppe-suit-using-micropipette-filling-test-tubes-modern-equipped-laboratory-team-scientists-examining-virus-evolution-using-high-tech-vaccine-development-against-covid19_482257-13595.jpg",
     },
   ];
 
@@ -50,7 +56,7 @@ const TrainingSection = () => {
   };
 
   return (
-    <div className="bg-slate-50 py-12">
+    <div className="bg-slate-50 mt-10 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
           Industrial Training for Students Only

@@ -35,8 +35,12 @@ const TestingServices = () => {
 
   return (
     <div className=" max-w-3xl mx-auto mt-8">
-      <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
-        Services
+      <h2 className="text-3xl font-bold text-center text-gray-200 mb-6">
+        Testing
+        <br></br>
+        <p>-------</p>
+        
+        <p className="py-4"> Food and Agriculture </p>
       </h2>
 
       {/* Food and Agricultural Testing */}

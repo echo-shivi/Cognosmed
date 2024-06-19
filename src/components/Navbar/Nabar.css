@@ -1,0 +1,12 @@
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  padding-bottom: 5px; /* Adjust as needed */
+  transition: border-bottom-color 0.2s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  border-bottom: 2px solid black; /* Color and thickness of the line */
+}

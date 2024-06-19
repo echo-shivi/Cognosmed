@@ -1,0 +1,15 @@
+@keyframes flyAndMove {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-8px) translateX(8px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+.animated-icon {
+  animation: flyAndMove 1s ease-in-out infinite;
+}

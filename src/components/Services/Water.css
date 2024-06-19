@@ -1,0 +1,30 @@
+.parallax-section {
+  position: relative;
+  overflow: hidden;
+  height: 600px; /* Adjust height as needed */
+}
+
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("https://img.freepik.com/free-photo/view-clear-water-with-splash-effect_23-2150870022.jpg");
+  background-size: cover;
+  transform: translateZ(0);
+}
+
+.parallax-content {
+  position: relative;
+  z-index: 1; /* Ensure content is above the background */
+  text-align: center;
+  padding: 100px 20px; /* Adjust padding as needed */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Optional: Add a semi-transparent background for better readability */
+}

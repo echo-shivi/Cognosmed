@@ -1,0 +1,72 @@
+/* WhyChooseUsSection.css */
+
+@keyframes bounce-once {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-bounce-once {
+  animation: bounce-once 1s ease-out;
+}
+
+.animate-bounce-once {
+  animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.why-choose-us-section {
+  transition: transform 0.3s ease-in-out;
+}
+
+.why-choose-us-section.hovered {
+  transform: translateY(-8px);
+}
+
+.why-choose-us-heading {
+  position: relative;
+  display: inline-block;
+}
+
+.why-choose-us-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -4px; /* Adjust this value to place the line where you want */
+  left: 50%; /* Center the line horizontally */
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: #a4a8b2bf; /* Light gray color */
+  transition: width 0.3s ease-in-out; /* Smooth transition */
+}
+
+.why-choose-us-section.hovered .why-choose-us-heading::after {
+  width: 50%; /* Adjust the width on hover as needed */
+}

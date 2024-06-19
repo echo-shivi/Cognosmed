@@ -1,29 +1,28 @@
+// App.jsx
 import React from "react";
-import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
-import Services from "./components/Services/Services";
-import Typewriter from "./components/Typwriter/Typwriter";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import AboutUs from "./components/About/AboutUsPage";
+import Contact from "./components/Contact";
+import NotFound from "./components/NotFound";
 import Training from "./components/Training/Training";
-import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
+import Layout from "./components/Layout";
+import Blog from "./components/Blog/Blog"
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      <Typewriter />
-      <Hero />
-      <Services />
-      <Training />
-      <div className="mt-10 rounded-md">
-        <main className="flex-grow">
-          {/* Other content */}
-          <Contact />
-        </main>
-      </div>
-
-      <Footer />
-    </div>
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/training" element={<Training />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 };
 

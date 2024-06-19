@@ -1,0 +1,28 @@
+.mission-section {
+  text-align: center; /* Center align the text within .mission-section */
+}
+
+.mission-section:hover {
+  transform: translateY(-8px); /* Lifts up by 8px on hover */
+}
+
+.mission-heading {
+  position: relative;
+  display: inline-block;
+}
+
+.mission-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -4px; /* Adjust this value to place the line where you want */
+  left: 50%; /* Center the line horizontally */
+  transform: translateX(-50%); /* Adjust to center the line precisely */
+  width: 100%;
+  height: 2px;
+  background-color: #a4a8b2bf; /* Light gray color */
+  transition: width 0.3s ease-in-out; /* Smooth transition */
+}
+
+.mission-heading:hover::after {
+  width: 50%; /* Adjust the width on hover as needed */
+}
