@@ -98,7 +98,7 @@ const Services = () => {
       image:
         "https://tse2.mm.bing.net/th?id=OIP.WgFc9IEfUrTD-soZyW6emQHaHa&pid=Api&P=0&h=220",
       title: "Sauce",
-      description: "all types of Sause-ketchup",
+      description: "all types of Sauce-ketchup",
       url: "#",
     },
     // {
