@@ -11,7 +11,7 @@ import Blog from "./components/Blog/Blog";
 
 const App = () => {
   return (
-    <Router basename="/Cognosmed-Project/">
+    <Router basename="/Cognosmed/">
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
