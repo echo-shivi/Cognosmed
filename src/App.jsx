@@ -7,11 +7,11 @@ import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
 import Training from "./components/Training/Training";
 import Layout from "./components/Layout";
-import Blog from "./components/Blog/Blog"
+import Blog from "./components/Blog/Blog";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/Cognosmed-Project/">
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />

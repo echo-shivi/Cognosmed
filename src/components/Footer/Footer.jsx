@@ -167,7 +167,7 @@ const Footer = () => {
           </p>
           <p className="text-gray-300 text-base mt-2">
             Made with <FaCode className="ml-1 inline-block align-middle" /> by
-            Shivi
+            Shivi for more info mail : shivisinghcop@gamil.com
           </p>
         </div>
       </div>

@@ -23,7 +23,7 @@ const WhyChooseUsSection = () => {
       timeoutIds.push(
         setTimeout(() => {
           setVisibleItems((prevVisibleItems) => [...prevVisibleItems, item]);
-        }, 500 * (index + 1)) // 500ms delay multiplied by index to stagger items
+        }, 1000 * (index + 1)) // 500ms delay multiplied by index to stagger items
       );
     });
 

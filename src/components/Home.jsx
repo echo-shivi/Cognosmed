@@ -1,18 +1,17 @@
 import React from "react";
 import Navbar from "./Navbar/Navbar";
 import Hero from "./Hero/Hero";
-import Services from "./Services/Service2";
+import Services from "./Services/Services3";
 import Typewriter from "./Typwriter/Typwriter";
 import Training from "./Training/Training";
 import Contact from "./Contact/Contact";
 import Footer from "./Footer/Footer";
-import Water from "./Services/Water";
-import Ayush from "./Services/Ayush";
+import Water from "./Services/Water2";
+import Ayush from "./Services/Ayush2";
 
 const Home = () => {
   return (
     <div>
-
       <Typewriter />
       <Hero />
       <Services />
@@ -25,8 +24,6 @@ const Home = () => {
           <Contact />
         </main>
       </div>
-
-   
     </div>
   );
 };
